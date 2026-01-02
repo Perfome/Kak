@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmet'ten Berra'ya • Kodlanmış Çiçek</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="terminal">
+        <div class="terminal-header">
+            <div class="buttons">
+                <div class="btn close"></div>
+                <div class="btn minimize"></div>
+                <div class="btn maximize"></div>
+            </div>
+            <span class="title">💻 love_generator.exe</span>
+        </div>
+        <div class="terminal-body">
+            <div class="code-line">$ <span class="typing" id="code-output"></span><span class="cursor">█</span></div>
+        </div>
+    </div>
+
+    <div class="container hidden" id="main-content">
+        <div class="glass-card">
+            <div class="flower-container">
+                <div class="flower" id="magic-flower">
+                    <div class="center">❤️</div>
+                    <div class="petal p1"></div>
+                    <div class="petal p2"></div>
+                    <div class="petal p3"></div>
+                    <div class="petal p4"></div>
+                    <div class="petal p5"></div>
+                    <div class="petal p6"></div>
+                    <div class="petal p7"></div>
+                    <div class="petal p8"></div>
+                    <div class="stem"></div>
+                    <div class="leaf leaf1"></div>
+                    <div class="leaf leaf2"></div>
+                </div>
+            </div>
+
+            <div class="message">
+                <h1><i class="fas fa-heart"></i> Ahmet'ten Berra'ya</h1>
+                <div class="poem">
+                    <p>Herkes çiçek alır, ben senin için <span class="highlight">kodladım</span>.</p>
+                    <p>CSS'deki her "bloom" animasyonu,</p>
+                    <p>Sen gülümsediğinde kalbimde açan bahar demeti.</p>
+                    <p>JavaScript'te "while(true)" döngüsüyüm,</p>
+                    <p>Şartı hep senin olman, sonsuza kadar sevmek.</p>
+                    <p>HTML'imdeki tek "div" sensin,</p>
+                    <p>Bu site sadece senin için compile oldu Berra.</p>
+                </div>
+                <div class="signature">
+                    <p>— 0'dan 1'e kadar her bit'te seni düşünen</p>
+                    <p class="name">Ahmet ❤️</p>
+                </div>
+                <button class="btn-replay" onclick="replayAnimation()">
+                    <i class="fas fa-redo"></i> Animasyonu Tekrar Oynat
+                </button>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p><i class="fas fa-code"></i> Bu site GitHub'da yaşıyor: 
+                <a href="#" target="_blank">github.com/ahmetberra/love_flower</a></p>
+            <p class="hint">#pskodtr ❤️ #KodlayanAşıklar</p>
+        </div>
+    </div>
+
+    <audio id="bloom-sound" src="https://assets.mixkit.co/sfx/preview/mixkit-unlock-game-notification-253.mp3" preload="auto"></audio>
+    
+    <script src="script.js"></script>
+</body>
+</html>
